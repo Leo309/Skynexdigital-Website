@@ -5,9 +5,7 @@ export const metadata = {
   description: 'Insights on AI marketing automation, AI search visibility (GEO), and the future of marketing technology.',
 };
 
-// 模拟从API或数据库获取博客文章
 async function getBlogPosts() {
-  // 在真实项目中，这里会使用Supabase或其他数据源
   return [
     {
       id: 1,
@@ -34,25 +32,24 @@ async function getBlogPosts() {
 }
 
 export default async function BlogPage() {
-  // Next.js 15中推荐的数据获取方式
   const posts = await getBlogPosts();
-  
+
   return (
-    <div className="bg-gradient-to-b from-skynex-light to-gray-100 dark:from-skynex-dark dark:to-gray-900">
+    <div className="bg-skynex-dark text-white">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 bg-gradient-to-br from-skynex-dark to-gray-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-20"></div>
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        <div className="absolute inset-0 starfield opacity-50" />
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="heading-xl mb-6">Blog</h1>
+            <h1 className="heading-xl font-display text-gradient-light mb-6">Blog</h1>
             <p className="text-xl text-gray-300 mb-8">
               Insights on AI search, marketing automation, and the future of marketing tech
             </p>
-            <Link 
+            <Link
               href="/blog/subscribe"
-              className="btn-primary py-3 px-8 text-lg inline-flex items-center"
+              className="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-medium hover:shadow-lg hover:shadow-emerald-500/30 transition-all duration-300"
             >
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               Subscribe to Newsletter
@@ -62,29 +59,29 @@ export default async function BlogPage() {
       </section>
 
       {/* Blog Posts Section */}
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <div className="grid gap-12">
               {posts.map(post => (
-                <article key={post.id} className="border-b border-gray-200 dark:border-gray-700 pb-12 last:border-0">
-                  <h2 className="heading-md mb-4 text-skynex-blue dark:text-skynex-accent">
-                    <Link href={`/blog/${post.id}`} className="hover:underline">
+                <article key={post.id} className="glass-card p-8 border-l-2 border-l-skynex-accent">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-skynex-accent">
+                    <Link href={`/blog/${post.id}`} className="hover:text-white transition-colors">
                       {post.title}
                     </Link>
                   </h2>
-                  <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-4">
+                  <div className="flex items-center text-sm text-gray-500 mb-4">
                     <span>{post.date}</span>
-                    <span className="mx-2">•</span>
+                    <span className="mx-2">&bull;</span>
                     <span>{post.author}</span>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-300 mb-6">
+                  <p className="text-gray-300 mb-6">
                     {post.excerpt}
                   </p>
-                  <Link href={`/blog/${post.id}`} className="text-skynex-blue dark:text-skynex-accent font-medium hover:underline inline-flex items-center">
+                  <Link href={`/blog/${post.id}`} className="text-skynex-accent font-medium hover:text-white transition-colors inline-flex items-center">
                     Read more
-                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                     </svg>
                   </Link>
                 </article>

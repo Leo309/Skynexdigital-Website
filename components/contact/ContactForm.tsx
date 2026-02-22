@@ -106,7 +106,7 @@ export default function ContactForm() {
             value={formData.firstName}
             onChange={handleChange}
             required
-            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-blue focus:ring-skynex-blue dark:bg-gray-800 dark:border-gray-700 dark:text-white"
+            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-accent focus:ring-skynex-accent/30 dark:bg-white/5 dark:border-white/10 dark:text-white"
           />
         </div>
         <div>
@@ -120,7 +120,7 @@ export default function ContactForm() {
             value={formData.lastName}
             onChange={handleChange}
             required
-            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-blue focus:ring-skynex-blue dark:bg-gray-800 dark:border-gray-700 dark:text-white"
+            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-accent focus:ring-skynex-accent/30 dark:bg-white/5 dark:border-white/10 dark:text-white"
           />
         </div>
       </div>
@@ -135,7 +135,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-blue focus:ring-skynex-blue dark:bg-gray-800 dark:border-gray-700 dark:text-white"
+          className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-accent focus:ring-skynex-accent/30 dark:bg-white/5 dark:border-white/10 dark:text-white"
         />
       </div>
       <div>
@@ -148,7 +148,7 @@ export default function ContactForm() {
           name="company"
           value={formData.company}
           onChange={handleChange}
-          className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-blue focus:ring-skynex-blue dark:bg-gray-800 dark:border-gray-700 dark:text-white"
+          className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-accent focus:ring-skynex-accent/30 dark:bg-white/5 dark:border-white/10 dark:text-white"
         />
       </div>
       <div>
@@ -161,7 +161,7 @@ export default function ContactForm() {
           value={formData.subject}
           onChange={handleChange}
           required
-          className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-blue focus:ring-skynex-blue dark:bg-gray-800 dark:border-gray-700 dark:text-white"
+          className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-accent focus:ring-skynex-accent/30 dark:bg-white/5 dark:border-white/10 dark:text-white"
         >
           <option value="">Select a subject</option>
           <option value="general">General Inquiry</option>
@@ -181,7 +181,7 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           required
-          className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-blue focus:ring-skynex-blue dark:bg-gray-800 dark:border-gray-700 dark:text-white"
+          className="block w-full rounded-md border-gray-300 shadow-sm focus:border-skynex-accent focus:ring-skynex-accent/30 dark:bg-white/5 dark:border-white/10 dark:text-white"
         ></textarea>
       </div>
       <div>

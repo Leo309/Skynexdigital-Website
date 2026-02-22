@@ -1,10 +1,11 @@
 import '../styles/globals.css';
-import { Inter } from 'next/font/google';
+import { Inter, Space_Grotesk } from 'next/font/google';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import OrganizationSchema from '../components/seo/OrganizationSchema';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-display' });
 
 export const metadata = {
   icons: {
@@ -67,19 +68,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
-        {/* Script to allow theme switching */}
+        {/* Script to allow theme switching — default dark */}
         <script dangerouslySetInnerHTML={{ __html: `
           (function() {
             try {
               var savedTheme = localStorage.getItem('theme');
-              var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-              
-              if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                document.documentElement.classList.add('dark');
-              } else {
+              if (savedTheme === 'light') {
                 document.documentElement.classList.remove('dark');
+              } else {
+                document.documentElement.classList.add('dark');
               }
             } catch (e) { }
           })();
