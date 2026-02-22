@@ -4,14 +4,12 @@
 
 I've created dedicated directories for different types of images:
 
-1. **Tools Screenshots**: `/public/images/tools/`
-   - Place your inflation calculator screenshot here as `inflation-calculator.png`
-   - This will automatically show up on the tools page
+1. **Product Screenshots**: `/public/images/tools/`
+   - `Real_Return_Analyzer.png` — Real Return Analyzer screenshot
+   - `CollabOS.png` — CollabZen.ai screenshot (to be replaced with updated branding)
+   - GeoGrade.ai screenshot — to be added
 
-2. **Team Photos**: `/public/images/team/`
-   - Store any team member photos here
-
-3. **Location Pins/Maps**: `/public/images/locations/`
+2. **Location Images**: `/public/images/locations/`
    - Store location-specific images here
 
 ## Supabase Contact Form Integration

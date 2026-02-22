@@ -1,10 +1,10 @@
-# SKYNEX GLOBAL COMMERCE & TECH INC. Official Website
+# SKYNEX DIGITAL Official Website
 
-This is the official website for SKYNEX GLOBAL COMMERCE & TECH INC., a technology company based in British Columbia, Canada with presence in New York City and Vancouver.
+This is the official website for SKYNEX DIGITAL (SKYNEX GLOBAL COMMERCE & TECH INC.), an AI-powered marketing automation company based in British Columbia, Canada with offices in New York City and Metro Vancouver.
 
 ## About SKYNEX
 
-SKYNEX specializes in e-commerce solutions and AI-powered products that help businesses make better decisions and stay competitive in the digital marketplace.
+SKYNEX builds AI-powered tools that automate repetitive marketing workflows. From checking brand visibility in AI search to managing partnerships, we build products for the new era of marketing.
 
 ## Website Features
 
@@ -19,8 +19,9 @@ SKYNEX specializes in e-commerce solutions and AI-powered products that help bus
 
 ## Our Products
 
-- **Inflation Calculator**: A tool for understanding the impact of inflation on purchasing power over time. Available at [inflation.skynexdigital.com](https://inflation.skynexdigital.com)
-- More products coming soon!
+- **GeoGrade.ai**: AI agent that simulates real users to check your brand's visibility in AI search tools like ChatGPT, Perplexity, and Gemini. Available at [geograde.ai](https://geograde.ai)
+- **CollabZen.ai**: Lightweight CRM for managing partnerships, collaborations, and campaigns. Available at [collabzen.ai](https://collabzen.ai)
+- **Real Return Analyzer**: Track inflation impact on purchasing power with data-driven insights.
 
 ## Local Development
 

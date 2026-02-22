@@ -29,7 +29,7 @@ export default function OrganizationSchema() {
       postalCode: 'V5H 0H4',
       addressCountry: 'CA'
     },
-    description: 'SKYNEX DIGITAL specializes in e-commerce solutions and AI-powered tools that help businesses make better decisions and stay competitive in the digital marketplace.'
+    description: 'SKYNEX DIGITAL builds AI-powered marketing automation tools for the new era. From AI search visibility checking to lightweight CRM, we help marketers work smarter.'
   };
 
   return (

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Blog | SKYNEX GLOBAL COMMERCE & TECH INC.',
-  description: 'Insights and articles about e-commerce, AI tools, and digital technology trends.',
+  title: 'Blog | SKYNEX DIGITAL',
+  description: 'Insights on AI marketing automation, AI search visibility (GEO), and the future of marketing technology.',
 };
 
 // 模拟从API或数据库获取博客文章
@@ -11,23 +11,23 @@ async function getBlogPosts() {
   return [
     {
       id: 1,
-      title: 'Understanding Inflation in the Digital Economy',
-      excerpt: 'How inflation affects online businesses and digital products...',
-      date: 'March 25, 2025',
+      title: 'What is GEO? Why AI Search Visibility is the New SEO',
+      excerpt: 'Traditional SEO isn\'t enough anymore. Learn how Generative Engine Optimization helps your brand show up in ChatGPT, Perplexity, and other AI search tools...',
+      date: 'February 15, 2026',
       author: 'SKYNEX Team'
     },
     {
       id: 2,
-      title: 'The Future of AI in E-Commerce',
-      excerpt: 'Exploring how artificial intelligence is transforming online retail...',
-      date: 'March 10, 2025',
+      title: 'How AI Agents Are Reshaping Marketing Workflows',
+      excerpt: 'From content generation to competitive analysis, AI agents are automating the repetitive tasks that eat up marketing teams\' time...',
+      date: 'February 1, 2026',
       author: 'SKYNEX Team'
     },
     {
       id: 3,
-      title: 'Building Resilient Supply Chains',
-      excerpt: 'Strategies for creating adaptable and robust supply chains in uncertain times...',
-      date: 'February 28, 2025',
+      title: 'Building Products for the AI Era: Lessons from GeoGrade.ai',
+      excerpt: 'How we built an AI agent that simulates real users to check brand visibility across AI search platforms...',
+      date: 'January 20, 2026',
       author: 'SKYNEX Team'
     }
   ];
@@ -46,7 +46,7 @@ export default async function BlogPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="heading-xl mb-6">Blog</h1>
             <p className="text-xl text-gray-300 mb-8">
-              Insights and perspectives on e-commerce, AI, and digital technology
+              Insights on AI search, marketing automation, and the future of marketing tech
             </p>
             <Link 
               href="/blog/subscribe"

@@ -28,7 +28,7 @@ export default function Footer() {
             </div>
             <p className="mb-4 text-gray-300">
               SKYNEX DIGITAL<br />
-              Building data-driven, AI-powered SaaS products to enhance business operations and decision-making globally.
+              AI-powered marketing automation tools built for the new era. Helping marketers automate workflows and win in AI search.
             </p>
             <div className="flex space-x-4">
               <a href={process.env.NEXT_PUBLIC_LINKEDIN_URL} className="text-gray-400 hover:text-white transition-colors duration-300">
@@ -60,19 +60,19 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center">
-                  <svg className="w-3 h-3 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                  </svg>
-                  About Us
-                </Link>
-              </li>
-              <li>
                 <Link href="/products" className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center">
                   <svg className="w-3 h-3 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                   </svg>
                   Our Products
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center">
+                  <svg className="w-3 h-3 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                  </svg>
+                  About Us
                 </Link>
               </li>
               <li>
@@ -91,6 +91,30 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Our Products</h3>
             <ul className="space-y-4">
               <li className="group">
+                <a href="https://geograde.ai" target="_blank" rel="noopener noreferrer" className="bg-white/5 backdrop-blur-sm hover:bg-white/10 p-3 px-4 rounded-lg border border-white/10 flex items-center transition-all duration-300">
+                  <span className="h-9 w-9 flex items-center justify-center bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg mr-3">
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <div className="flex-1">
+                    <span className="text-gray-300 group-hover:text-white font-medium transition-colors duration-300">GeoGrade.ai</span>
+                  </div>
+                </a>
+              </li>
+              <li className="group">
+                <a href="https://collabzen.ai" target="_blank" rel="noopener noreferrer" className="bg-white/5 backdrop-blur-sm hover:bg-white/10 p-3 px-4 rounded-lg border border-white/10 flex items-center transition-all duration-300">
+                  <span className="h-9 w-9 flex items-center justify-center bg-gradient-to-br from-purple-600 to-indigo-700 rounded-lg mr-3">
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                    </svg>
+                  </span>
+                  <div className="flex-1">
+                    <span className="text-gray-300 group-hover:text-white font-medium transition-colors duration-300">CollabZen.ai</span>
+                  </div>
+                </a>
+              </li>
+              <li className="group">
                 <a href={process.env.NEXT_PUBLIC_REAL_RETURN_ANALYZER_URL} className="bg-white/5 backdrop-blur-sm hover:bg-white/10 p-3 px-4 rounded-lg border border-white/10 flex items-center transition-all duration-300">
                   <span className="h-9 w-9 flex items-center justify-center bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg mr-3">
                     <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -99,18 +123,6 @@ export default function Footer() {
                   </span>
                   <div className="flex-1">
                     <span className="text-gray-300 group-hover:text-white font-medium transition-colors duration-300">{process.env.NEXT_PUBLIC_REAL_RETURN_ANALYZER_NAME}</span>
-                  </div>
-                </a>
-              </li>
-              <li className="group">
-                <a href="https://collabos.skynexdigital.com" className="bg-white/5 backdrop-blur-sm hover:bg-white/10 p-3 px-4 rounded-lg border border-white/10 flex items-center transition-all duration-300">
-                  <span className="h-9 w-9 flex items-center justify-center bg-gradient-to-br from-purple-600 to-indigo-700 rounded-lg mr-3">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
-                    </svg>
-                  </span>
-                  <div className="flex-1">
-                    <span className="text-gray-300 group-hover:text-white font-medium transition-colors duration-300">Collab OS</span>
                   </div>
                 </a>
               </li>

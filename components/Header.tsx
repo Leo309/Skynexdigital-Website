@@ -87,11 +87,11 @@ export default function Header() {
             <Link href="/" className="text-gray-700 hover:text-skynex-blue dark:text-white/80 dark:hover:text-white transition-colors">
               Home
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-skynex-blue dark:text-white/80 dark:hover:text-white transition-colors">
-              About
-            </Link>
             <Link href="/products" className="text-gray-700 hover:text-skynex-blue dark:text-white/80 dark:hover:text-white transition-colors">
               Products
+            </Link>
+            <Link href="/about" className="text-gray-700 hover:text-skynex-blue dark:text-white/80 dark:hover:text-white transition-colors">
+              About
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-skynex-blue dark:text-white/80 dark:hover:text-white transition-colors">
               Contact
@@ -114,16 +114,18 @@ export default function Header() {
               )}
             </button>
             
-            <Link 
-              href="/products" 
+            <a
+              href="https://geograde.ai"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`ml-4 px-5 py-2 rounded-full font-medium text-sm transition-all duration-300 ${
-                darkMode 
-                  ? 'bg-gradient-to-r from-blue-600 to-cyan-500 text-white hover:shadow-lg hover:shadow-blue-500/40' 
+                darkMode
+                  ? 'bg-gradient-to-r from-emerald-500 to-cyan-500 text-white hover:shadow-lg hover:shadow-emerald-500/40'
                   : 'bg-skynex-blue text-white hover:bg-blue-700'
               }`}
             >
-              Try Our Products
-            </Link>
+              Try GeoGrade.ai
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -182,28 +184,28 @@ export default function Header() {
               : 'bg-white/95 backdrop-blur-lg'
           }`}>
             <div className="flex flex-col items-center space-y-8 text-center">
-              <Link 
+              <Link
                 href="/"
                 className={`text-2xl ${darkMode ? 'text-white hover:text-cyan-400' : 'text-gray-700 hover:text-skynex-blue'} transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
-              <Link 
-                href="/about"
-                className={`text-2xl ${darkMode ? 'text-white hover:text-cyan-400' : 'text-gray-700 hover:text-skynex-blue'} transition-colors`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link 
+              <Link
                 href="/products"
                 className={`text-2xl ${darkMode ? 'text-white hover:text-cyan-400' : 'text-gray-700 hover:text-skynex-blue'} transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Products
               </Link>
-              <Link 
+              <Link
+                href="/about"
+                className={`text-2xl ${darkMode ? 'text-white hover:text-cyan-400' : 'text-gray-700 hover:text-skynex-blue'} transition-colors`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+              <Link
                 href="/contact"
                 className={`text-2xl ${darkMode ? 'text-white hover:text-cyan-400' : 'text-gray-700 hover:text-skynex-blue'} transition-colors`}
                 onClick={() => setIsMenuOpen(false)}
@@ -211,17 +213,19 @@ export default function Header() {
                 Contact
               </Link>
               <div className="pt-6">
-                <Link 
-                  href="/products" 
+                <a
+                  href="https://geograde.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`px-8 py-3 rounded-full font-medium transition-all duration-300 ${
-                    darkMode 
-                      ? 'bg-gradient-to-r from-blue-600 to-cyan-500 text-white hover:shadow-lg hover:shadow-blue-500/40' 
+                    darkMode
+                      ? 'bg-gradient-to-r from-emerald-500 to-cyan-500 text-white hover:shadow-lg hover:shadow-emerald-500/40'
                       : 'bg-skynex-blue text-white hover:bg-blue-700'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Try Our Products
-                </Link>
+                  Try GeoGrade.ai
+                </a>
               </div>
             </div>
           </div>

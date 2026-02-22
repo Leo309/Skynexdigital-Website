@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'AI-Powered Products | SKYNEX GLOBAL COMMERCE & TECH INC.',
-  description: 'Explore our suite of data-driven, AI-powered SaaS products for financial analytics, business intelligence, and decision support.',
+  title: 'Products | SKYNEX DIGITAL',
+  description: 'AI-powered marketing automation tools. GeoGrade.ai for AI search visibility, CollabZen.ai for partnership management, and more.',
 };
 
 export default function ProductsPage() {
@@ -14,27 +14,154 @@ export default function ProductsPage() {
         <div className="absolute inset-0 bg-grid-pattern opacity-20"></div>
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="heading-xl mb-6">Digital Products</h1>
+            <h1 className="heading-xl mb-6">Our Products</h1>
             <p className="text-xl text-gray-300">
-              Powerful, data-driven solutions that help you make better business decisions.
+              AI-powered tools built for marketers navigating the new era of AI search and automation.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Tools Showcase */}
+      {/* Products Showcase */}
       <section className="py-16 bg-white dark:bg-gray-900">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="heading-lg mb-12 text-center text-gray-900 dark:text-white">Our Products</h2>
-            
-            {/* Real Return Analyzer*/}
+
+            {/* GeoGrade.ai */}
+            <div className="mb-16 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+              <div className="md:flex">
+                <div className="md:w-2/5 bg-gradient-to-br from-emerald-500 to-cyan-500 p-8 text-white">
+                  <div className="flex items-center gap-2 mb-4">
+                    <h3 className="text-2xl font-bold text-white">GeoGrade.ai</h3>
+                    <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-white/20">NEW</span>
+                  </div>
+                  <p className="mb-6">
+                    Check your brand&apos;s visibility across AI search platforms like ChatGPT, Perplexity, and Gemini.
+                  </p>
+                  <div className="mb-8">
+                    <div className="flex items-center mb-2">
+                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                      </svg>
+                      <span>Simulates real user queries</span>
+                    </div>
+                    <div className="flex items-center mb-2">
+                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                      </svg>
+                      <span>AI-powered visibility scoring</span>
+                    </div>
+                    <div className="flex items-center mb-2">
+                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                      </svg>
+                      <span>Competitive analysis</span>
+                    </div>
+                    <div className="flex items-center">
+                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                      </svg>
+                      <span>Actionable recommendations</span>
+                    </div>
+                  </div>
+                  <a
+                    href="https://geograde.ai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-white text-emerald-600 hover:bg-emerald-50 font-bold py-3 px-6 rounded-md transition-colors"
+                  >
+                    Try GeoGrade.ai
+                  </a>
+                </div>
+                <div className="md:w-3/5 p-8">
+                  <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Why AI Search Visibility Matters</h4>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Traditional SEO is no longer enough. Millions of people now ask AI for product recommendations instead of searching Google. GeoGrade.ai helps you:
+                  </p>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                    <li>• Understand how AI describes your brand vs competitors</li>
+                    <li>• Identify gaps in your AI search presence</li>
+                    <li>• Track visibility changes over time</li>
+                    <li>• Optimize your content for AI discovery</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* CollabZen.ai */}
+            <div className="mb-16 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+              <div className="md:flex">
+                <div className="md:w-2/5 bg-gradient-to-br from-purple-600 to-indigo-700 p-8 text-white">
+                  <h3 className="text-2xl font-bold mb-4 text-white">CollabZen.ai</h3>
+                  <p className="mb-6">
+                    Lightweight CRM for partnership and campaign management.
+                  </p>
+                  <div className="mb-8">
+                    <div className="flex items-center mb-2">
+                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                      </svg>
+                      <span>Clean, intuitive interface</span>
+                    </div>
+                    <div className="flex items-center mb-2">
+                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                      </svg>
+                      <span>Smart deadline alerts</span>
+                    </div>
+                    <div className="flex items-center mb-2">
+                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                      </svg>
+                      <span>Real-time progress tracking</span>
+                    </div>
+                    <div className="flex items-center">
+                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                      </svg>
+                      <span>Campaign performance overview</span>
+                    </div>
+                  </div>
+                  <a
+                    href="https://collabzen.ai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-white text-indigo-700 hover:bg-indigo-50 font-bold py-3 px-6 rounded-md transition-colors"
+                  >
+                    Launch Platform
+                  </a>
+                </div>
+                <div className="md:w-3/5 p-8">
+                  <div className="aspect-w-16 aspect-h-9 mb-6">
+                    <div className="w-full h-64 overflow-hidden rounded-lg">
+                      <img
+                        src="/images/tools/CollabOS.png"
+                        alt="CollabZen.ai CRM Interface"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                  <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Simplify Your Partnerships</h4>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Manage partnerships without the overhead of enterprise CRM:
+                  </p>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                    <li>• Centralize partnerships in one clean dashboard</li>
+                    <li>• Never miss deadlines with automated notifications</li>
+                    <li>• Monitor campaign and project status at a glance</li>
+                    <li>• Export reports for stakeholder updates</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Real Return Analyzer */}
             <div className="mb-16 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
               <div className="md:flex">
                 <div className="md:w-2/5 bg-gradient-to-br from-blue-600 to-skynex-blue p-8 text-white">
                   <h3 className="text-2xl font-bold mb-4 text-white">{process.env.NEXT_PUBLIC_REAL_RETURN_ANALYZER_NAME}</h3>
                   <p className="mb-6">
-                    Track inflation's real impact on your investments and purchasing power.
+                    Track inflation&apos;s real impact on your investments and purchasing power.
                   </p>
                   <div className="mb-8">
                     <div className="flex items-center mb-2">
@@ -62,10 +189,10 @@ export default function ProductsPage() {
                       <span>Projection scenarios</span>
                     </div>
                   </div>
-                  <a 
-                    href={process.env.NEXT_PUBLIC_REAL_RETURN_ANALYZER_URL} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={process.env.NEXT_PUBLIC_REAL_RETURN_ANALYZER_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-white text-skynex-blue hover:bg-blue-50 font-bold py-3 px-6 rounded-md transition-colors"
                   >
                     Launch Calculator
@@ -74,9 +201,9 @@ export default function ProductsPage() {
                 <div className="md:w-3/5 p-8">
                   <div className="aspect-w-16 aspect-h-9 mb-6">
                     <div className="w-full h-64 overflow-hidden rounded-lg">
-                      <img 
-                        src="/images/tools/Real_Return_Analyzer.png" 
-                        alt="Real Return Analyzer Tool Interface" 
+                      <img
+                        src="/images/tools/Real_Return_Analyzer.png"
+                        alt="Real Return Analyzer Tool Interface"
                         className="w-full h-full object-contain"
                       />
                     </div>
@@ -94,93 +221,25 @@ export default function ProductsPage() {
                 </div>
               </div>
             </div>
-            
-            {/* CollabOS Partner Management System */}
-            <div className="mb-16 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden relative">
-              <div className="md:flex">
-                <div className="md:w-2/5 bg-gradient-to-br from-purple-600 to-indigo-700 p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-4 text-white">Collab OS</h3>
-                  <p className="mb-6">
-                    Lightweight, intuitive platform for seamless partner and campaign management.
-                  </p>
-                  <div className="mb-8">
-                    <div className="flex items-center mb-2">
-                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                      </svg>
-                      <span>Easy-to-learn interface</span>
-                    </div>
-                    <div className="flex items-center mb-2">
-                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                      </svg>
-                      <span>Smart deadline alerts</span>
-                    </div>
-                    <div className="flex items-center mb-2">
-                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                      </svg>
-                      <span>Real-time progress tracking</span>
-                    </div>
-                    <div className="flex items-center">
-                      <svg className="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                      </svg>
-                      <span>Data-driven insights</span>
-                    </div>
-                  </div>
-                  <a 
-                    href="https://collabos.skynexdigital.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="inline-block bg-white text-indigo-700 hover:bg-blue-50 font-bold py-3 px-6 rounded-md transition-colors"
-                  >
-                    Launch Platform
-                  </a>
-                </div>
-                <div className="md:w-3/5 p-8">
-                  <div className="aspect-w-16 aspect-h-9 mb-6">
-                    <div className="w-full h-64 overflow-hidden rounded-lg">
-                      <img 
-                        src="/images/tools/CollabOS.png" 
-                        alt="CollabOS Partner Management System Interface" 
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                  </div>
-                  <h4 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Simplify Your Collaboration</h4>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    Boost efficiency with a platform designed for speed and clarity:
-                  </p>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                    <li>• Centralize partnerships in one intuitive hub</li>
-                    <li>• Never miss deadlines with timely notifications</li>
-                    <li>• Monitor project status with minimal effort</li>
-                    <li>• Make smarter decisions with visual analytics</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
+
             {/* Custom Solutions */}
             <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Need a Custom Solution?</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Building Something New?</h3>
               <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-6">
-                We specialize in developing tailored tools and platforms for specific business needs. 
-                Our team can work with you to create custom solutions that address your unique challenges.
+                We&apos;re always exploring new ideas at the intersection of AI and marketing. Have a workflow you want automated? We&apos;d love to hear about it.
               </p>
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="btn-primary py-3 px-8"
               >
-                Contact Our Team
+                Get in Touch
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How We Build Our Tools */}
+      {/* How We Build Our Products */}
       <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="container-custom">
           <h2 className="heading-lg mb-12 text-center text-gray-900 dark:text-white">How We Build Our Products</h2>
@@ -195,7 +254,7 @@ export default function ProductsPage() {
               </div>
               <h3 className="text-lg font-bold mb-2 text-center text-gray-900 dark:text-white">Research</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">
-                We identify real market needs through in-depth research and analysis.
+                We identify pain points in modern marketing workflows that AI can solve.
               </p>
             </div>
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
@@ -208,7 +267,7 @@ export default function ProductsPage() {
               </div>
               <h3 className="text-lg font-bold mb-2 text-center text-gray-900 dark:text-white">Design</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">
-                Our intuitive interfaces make complex financial data accessible.
+                We design clean, fast interfaces that marketers actually want to use.
               </p>
             </div>
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
@@ -221,7 +280,7 @@ export default function ProductsPage() {
               </div>
               <h3 className="text-lg font-bold mb-2 text-center text-gray-900 dark:text-white">Development</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">
-                Built with cutting-edge technology for reliability and performance.
+                Built with modern tech stacks for speed, reliability, and scale.
               </p>
             </div>
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
@@ -235,52 +294,48 @@ export default function ProductsPage() {
               </div>
               <h3 className="text-lg font-bold mb-2 text-center text-gray-900 dark:text-white">Refinement</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">
-                Continuous improvement based on user feedback and market changes.
+                Continuous improvement driven by user feedback and market shifts.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials - For future use */}
+      {/* Testimonials */}
       <section className="py-16 bg-white dark:bg-gray-900">
         <div className="container-custom">
           <h2 className="heading-lg mb-12 text-center text-gray-900 dark:text-white">What Our Users Say</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
               <p className="italic text-gray-600 dark:text-gray-300 mb-6">
-                "The Real Return Analyzer has become an essential tool for our financial planning. It's intuitive, 
-                accurate, and provides insights that help us make better investment decisions."
+                &ldquo;GeoGrade.ai showed us exactly where we were invisible in AI search. Within weeks of optimizing, we started showing up in ChatGPT recommendations.&rdquo;
               </p>
               <div>
-                <h4 className="font-bold text-gray-800 dark:text-white">Financial Analyst</h4>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Investment Firm</p>
+                <h4 className="font-bold text-gray-800 dark:text-white">Marketing Lead</h4>
+                <p className="text-sm text-gray-500 dark:text-gray-400">SaaS Company</p>
               </div>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
               <p className="italic text-gray-600 dark:text-gray-300 mb-6">
-                "What sets SKYNEX's tools apart is the attention to detail and user experience. 
-                The data is comprehensive, but presented in a way that's easy to understand and actionable."
+                &ldquo;CollabZen.ai replaced three different tools we were using to manage partnerships. It&apos;s simple, fast, and does exactly what we need.&rdquo;
               </p>
               <div>
-                <h4 className="font-bold text-gray-800 dark:text-white">E-Commerce Manager</h4>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Retail Company</p>
+                <h4 className="font-bold text-gray-800 dark:text-white">Partnership Manager</h4>
+                <p className="text-sm text-gray-500 dark:text-gray-400">Marketing Agency</p>
               </div>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
               <p className="italic text-gray-600 dark:text-gray-300 mb-6">
-                "We've been on the waitlist for the AI Market Analyzer and can't wait to start using it. 
-                If it's anything like their other tools, it will be a game-changer for our market research."
+                &ldquo;SKYNEX understands where marketing is headed. Their tools are built for the way we actually work today, not how we worked five years ago.&rdquo;
               </p>
               <div>
-                <h4 className="font-bold text-gray-800 dark:text-white">Marketing Director</h4>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Tech Startup</p>
+                <h4 className="font-bold text-gray-800 dark:text-white">Head of Growth</h4>
+                <p className="text-sm text-gray-500 dark:text-gray-400">DTC Brand</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
 
     </div>
   );

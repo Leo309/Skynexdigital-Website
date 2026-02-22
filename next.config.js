@@ -42,6 +42,17 @@ const nextConfig = {
     ];
   },
 
+  // 重定向规则
+  async redirects() {
+    return [
+      {
+        source: '/tools',
+        destination: '/products',
+        permanent: true,
+      },
+    ];
+  },
+
   // 缓存和重写规则
   async rewrites() {
     return [

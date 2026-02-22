@@ -2,6 +2,32 @@
 
 This document outlines the recent updates made to the SKYNEX website.
 
+## Content Pivot — AI Marketing Automation (February 2026)
+
+1. **Company Positioning**: Pivoted from "data-driven SaaS products" to "AI-powered marketing automation tools for the new era"
+   - Removed all "e-commerce" references across the entire site
+   - Updated messaging to focus on AI search visibility and marketing workflow automation
+
+2. **Product Lineup Updated**:
+   - **GeoGrade.ai** (NEW, flagship): AI agent that checks brand visibility across AI search tools (ChatGPT, Perplexity, Gemini)
+   - **CollabZen.ai** (renamed from Collab OS): Lightweight CRM for partnership and campaign management. URL changed to collabzen.ai
+   - **Real Return Analyzer** (kept, lowest priority): Inflation calculator retained with reduced prominence
+
+3. **Pages Updated**:
+   - Homepage: Hero, stats, capability cards, product cards, and CTA all rewritten
+   - Products page: Completely restructured — GeoGrade.ai first, CollabZen.ai second, Real Return Analyzer third
+   - About page: Mission, vision, company story, and values updated
+   - Contact page: FAQ rewritten for new products
+   - Blog page: Mock articles updated to GEO/AI marketing topics
+   - Header: Nav reordered (Products before About), CTA → "Try GeoGrade.ai"
+   - Footer: Company description and product links updated
+
+4. **Technical Changes**:
+   - `/tools` now redirects to `/products` (301 permanent redirect in next.config.js + server redirect in page component)
+   - Sitemap updated: replaced `/tools` with `/products`, added `/blog`
+   - All metadata (title, description, OG, Twitter) updated across all pages
+   - OrganizationSchema JSON-LD updated
+
 ## Brand Changes
 
 1. **Branding Update**: Changed primary brand name from "SKYNEX GLOBAL COMMERCE & TECH INC." to "SKYNEX DIGITAL"

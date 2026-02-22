@@ -1,8 +1,8 @@
 import React from 'react';
 
 export const metadata = {
-  title: 'About Us | SKYNEX GLOBAL COMMERCE & TECH INC.',
-  description: 'Learn about our mission, vision, and the team behind SKYNEX Digital.',
+  title: 'About Us | SKYNEX DIGITAL',
+  description: 'Learn about our mission to build AI-powered marketing automation tools for the new era.',
 };
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="heading-xl mb-6">About SKYNEX</h1>
-            <p className="text-xl text-gray-300 whitespace-nowrap">Creating intelligent, data-driven tools to power better business decisions worldwide.</p>
+            <p className="text-xl text-gray-300">Building AI-powered tools to automate marketing for the new era.</p>
           </div>
         </div>
       </section>
@@ -26,23 +26,19 @@ export default function AboutPage() {
             <div>
               <h2 className="heading-md mb-6 text-skynex-blue dark:text-skynex-accent">Our Mission</h2>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                At SKYNEX, our mission is to transform complex data into intuitive, actionable tools that businesses can rely on.
-                We're committed to developing powerful SaaS solutions that democratize access to sophisticated analytical capabilities.
+                At SKYNEX, our mission is to automate the repetitive parts of marketing using AI. We build focused, purpose-built tools that help marketing teams work faster and smarter — from understanding brand visibility in AI search to streamlining partner management.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300">
-                We believe that powerful technology should be accessible, understandable, and beneficial for 
-                businesses of all sizes. Our tools and solutions are designed with this philosophy at their core.
+                We believe marketing is being fundamentally reshaped by AI. The companies that embrace this shift early will have a massive advantage. We build the tools to help them get there.
               </p>
             </div>
             <div>
               <h2 className="heading-md mb-6 text-skynex-blue dark:text-skynex-accent">Our Vision</h2>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                We envision a future where businesses can seamlessly harness the power of advanced technology to make 
-                better decisions, serve their customers more effectively, and achieve sustainable growth.
+                We envision a future where marketing teams spend zero time on tasks AI can handle. From monitoring brand visibility across AI platforms to managing campaigns and partnerships, every repetitive workflow should be automated.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300">
-                SKYNEX aims to be at the forefront of this transformation, constantly innovating and developing 
-                solutions that make this vision a reality for our clients and partners.
+                SKYNEX aims to be the go-to platform for marketers who want to stay ahead of the AI curve — building products that make the future of marketing accessible today.
               </p>
             </div>
           </div>
@@ -56,15 +52,15 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg dark:prose-invert mx-auto">
               <p className="mb-6">
-              SKYNEX Digital was founded in British Columbia, Canada with a clear vision: creating technology solutions that transform how businesses operate in the digital space.
+              SKYNEX Digital was founded in British Columbia, Canada with a clear belief: AI is fundamentally changing how marketing works, and most marketing teams aren&apos;t equipped for the shift.
               </p>
 
               <p className="mb-6">
-              Our founder brings data expertise from analyzing multi-million dollar datasets and close relationships with successful e-commerce entrepreneurs. This unique combination of technical knowledge and business understanding drives our product development.
+              Our founder saw an opportunity at the intersection of AI and marketing — brands were investing heavily in traditional SEO while millions of consumers were already getting product recommendations from ChatGPT and Perplexity. This insight led to the creation of GeoGrade.ai, our flagship product that helps brands understand their visibility in AI search.
               </p>
 
               <p>
-              We launched our Real Return Analyzer as the first in a series of practical tools to help businesses make more informed financial decisions. Today, SKYNEX continues to expand our suite of data-driven SaaS solutions, serving clients globally from our offices in New York City and Vancouver.
+              Today, SKYNEX is building a suite of AI-powered marketing tools, serving clients globally from our offices in New York City and Metro Vancouver. From AI search visibility to lightweight CRM, we build products for the new era of marketing.
               </p>
             </div>
           </div>
@@ -84,8 +80,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">Innovation</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                We constantly push boundaries to create solutions that harness the latest technological advancements 
-                in ways that deliver practical value.
+                We build at the frontier of AI and marketing. Our products solve problems that didn&apos;t exist two years ago — and that&apos;s exactly where we want to be.
               </p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
@@ -96,8 +91,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">Collaboration</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                We believe in the power of working together - both within our team and with our clients - 
-                to achieve exceptional results that exceed expectations.
+                We build with our users, not just for them. Tight feedback loops and real-world testing ensure our tools solve actual problems.
               </p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
@@ -108,8 +102,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">Reliability</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                We build tools and solutions you can count on, with a commitment to accuracy, 
-                security, and consistent performance that earns your trust.
+                Fast-moving doesn&apos;t mean fragile. We build tools that marketers can depend on, day after day, with consistent performance and accuracy.
               </p>
             </div>
           </div>

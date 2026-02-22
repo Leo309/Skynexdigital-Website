@@ -3,7 +3,7 @@ import ContactForm from '../../../components/contact/ContactForm';
 
 export const metadata = {
   title: 'Contact Us | SKYNEX DIGITAL',
-  description: 'Get in touch with our team for inquiries about our e-commerce solutions and AI tools.',
+  description: 'Get in touch with our team about AI marketing automation tools, GeoGrade.ai, CollabZen.ai, or partnership inquiries.',
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="heading-xl mb-6">Get In Touch</h1>
             <p className="text-xl text-gray-300">
-              Have questions about our solutions? We'd love to hear from you.
+              Have questions about our AI marketing tools? We&apos;d love to hear from you.
             </p>
           </div>
         </div>
@@ -91,34 +91,27 @@ export default function ContactPage() {
           <h2 className="heading-lg mb-12 dark:text-white text-center">Frequently Asked Questions</h2>
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm">
-              <h3 className="text-lg font-semibold mb-2 dark:text-white">What services does SKYNEX offer?</h3>
+              <h3 className="text-lg font-semibold mb-2 dark:text-white">What products does SKYNEX offer?</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                SKYNEX provides a range of e-commerce solutions and AI-powered tools, including custom e-commerce platform development, 
-                data analytics services, and specialized tools like our Inflation Calculator. We tailor our services to meet 
-                the specific needs of each client's business.
+                SKYNEX builds AI-powered marketing automation tools. Our flagship product, GeoGrade.ai, helps brands check their visibility across AI search platforms like ChatGPT, Perplexity, and Gemini. We also offer CollabZen.ai, a lightweight CRM for managing partnerships and campaigns, and our Real Return Analyzer for inflation-adjusted financial insights.
               </p>
             </div>
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm">
-              <h3 className="text-lg font-semibold mb-2 dark:text-white">How can I get started with SKYNEX's tools?</h3>
+              <h3 className="text-lg font-semibold mb-2 dark:text-white">How does GeoGrade.ai work?</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                You can access our Inflation Calculator directly through our website. For more information about our other 
-                services and upcoming tools, please contact our team through this page, and a representative will get back 
-                to you promptly with guidance on how to proceed.
+                GeoGrade.ai uses AI agents that simulate real users searching for products and services across major AI platforms. It checks how your brand appears in AI-generated responses, scores your visibility, and provides actionable recommendations to improve your AI search presence.
               </p>
             </div>
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm">
-              <h3 className="text-lg font-semibold mb-2 dark:text-white">Does SKYNEX offer custom development services?</h3>
+              <h3 className="text-lg font-semibold mb-2 dark:text-white">Is CollabZen.ai an AI product?</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Yes, we specialize in creating custom solutions tailored to your specific business needs. Whether you're looking 
-                for a custom e-commerce platform, specialized data tools, or unique AI applications, our team can work with you 
-                to develop solutions that align perfectly with your requirements.
+                CollabZen.ai is a lightweight CRM focused on simplicity and speed. It doesn&apos;t currently include AI features — it&apos;s designed to be a clean, fast tool for managing partnerships and campaigns without the complexity of enterprise CRM platforms.
               </p>
             </div>
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm">
-              <h3 className="text-lg font-semibold mb-2 dark:text-white ">Where are SKYNEX's offices located?</h3>
+              <h3 className="text-lg font-semibold mb-2 dark:text-white">Where are SKYNEX&apos;s offices located?</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                We have offices in New York City and Vancouver, serving clients across North America and globally. We work 
-                with clients remotely and can arrange in-person meetings at either of our locations as needed.
+                We have offices in New York City and Metro Vancouver, serving clients across North America and globally. We work with clients remotely and can arrange in-person meetings at either of our locations as needed.
               </p>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Page Not Found | SKYNEX GLOBAL COMMERCE & TECH INC.',
+  title: 'Page Not Found | SKYNEX DIGITAL',
   description: 'The page you are looking for does not exist.',
 };
 

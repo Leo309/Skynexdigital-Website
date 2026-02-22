@@ -15,12 +15,12 @@ export const metadata = {
     template: '%s | SKYNEX DIGITAL',
     default: 'SKYNEX DIGITAL',
   },
-  description: 'Innovative e-commerce solutions and AI tools for the digital age.',
-  keywords: 'e-commerce, AI tools, digital commerce, inflation calculator, tech company, British Columbia, NYC, Vancouver',
+  description: 'AI-powered marketing automation tools for the new era. Check your brand visibility in AI search, manage partnerships, and automate marketing workflows.',
+  keywords: 'AI marketing automation, GEO visibility, AI search optimization, marketing tools, AI agents, brand visibility, ChatGPT visibility, marketing tech',
   metadataBase: new URL('https://skynexdigital.com'),
   openGraph: {
-    title: 'SKYNEX DIGITAL',
-    description: 'Innovative e-commerce solutions and AI tools for the digital age.',
+    title: 'SKYNEX DIGITAL | AI-Powered Marketing Automation',
+    description: 'AI-powered marketing automation tools for the new era. Check your brand visibility in AI search, manage partnerships, and automate marketing workflows.',
     url: 'https://skynexdigital.com',
     siteName: 'SKYNEX DIGITAL',
     locale: 'en-US',
@@ -36,8 +36,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SKYNEX DIGITAL',
-    description: 'Innovative e-commerce solutions and AI tools for the digital age.',
+    title: 'SKYNEX DIGITAL | AI-Powered Marketing Automation',
+    description: 'AI-powered marketing automation tools built for the new era of AI search.',
     images: ['https://skynexdigital.com/images/twitter-image.jpg'],
   },
   alternates: {

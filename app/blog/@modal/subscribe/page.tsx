@@ -44,7 +44,7 @@ export default function SubscribeModal() {
         <div className="text-center mb-4">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white">Subscribe to Our Newsletter</h3>
           <p className="mt-2 text-gray-600 dark:text-gray-300">
-            Get the latest insights on e-commerce and AI technology directly to your inbox.
+            Get the latest insights on AI marketing automation and marketing tech directly to your inbox.
           </p>
         </div>
         
