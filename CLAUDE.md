@@ -28,7 +28,7 @@ No test framework is configured.
 
 ### Client vs Server Components
 
-Pages are server components by default. Client components (`'use client'`) are used for: `Header.tsx`, `Footer.tsx`, `components/contact/ContactForm.tsx`, `components/ui/ResponsiveImage.tsx`, `components/seo/OrganizationSchema.tsx`.
+Pages are server components by default. Client components (`'use client'`) are used for: `Header.tsx`, `Footer.tsx`, `components/contact/ContactForm.tsx`, `components/ui/ResponsiveImage.tsx`, `components/seo/OrganizationSchema.tsx`, `components/motion/HeroBackground.tsx`.
 
 ### Data Flow — Contact Form
 
@@ -44,7 +44,7 @@ Pages are server components by default. Client components (`'use client'`) are u
 
 ### Key Libraries
 
-- `framer-motion` — Used in `ResponsiveImage.tsx` for viewport-triggered lazy loading; homepage animations are pure CSS/Tailwind keyframes
+- `framer-motion` — Used in `ResponsiveImage.tsx` for viewport-triggered lazy loading, `HeroBackground.tsx` for scroll-driven text animations; other homepage animations are pure CSS/Tailwind keyframes
 - `clsx` + `tailwind-merge` — For conditional/merged class names
 - `class-variance-authority` — For component variant definitions
 - `zustand` — Installed but not actively used; currently local state only via `useState`
