@@ -1,11 +1,9 @@
 import '../styles/globals.css';
-import { Inter, Space_Grotesk } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import OrganizationSchema from '../components/seo/OrganizationSchema';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-display' });
 
 export const metadata = {
   icons: {
@@ -14,32 +12,23 @@ export const metadata = {
   },
   title: {
     template: '%s | SKYNEX DIGITAL',
-    default: 'SKYNEX DIGITAL',
+    default: 'SKYNEX DIGITAL — AI Search Visibility & Data-Driven Growth',
   },
-  description: 'AI-powered marketing automation tools for the new era. Check your brand visibility in AI search, manage partnerships, and automate marketing workflows.',
-  keywords: 'AI marketing automation, GEO visibility, AI search optimization, marketing tools, AI agents, brand visibility, ChatGPT visibility, marketing tech',
+  description: 'SKYNEX DIGITAL helps brands get found in AI search engines. We monitor your visibility across ChatGPT, Perplexity, and Gemini — and turn data into growth.',
+  keywords: 'AI search visibility, GEO, generative engine optimization, brand visibility, AI SEO, data-driven growth, ChatGPT visibility',
   metadataBase: new URL('https://skynexdigital.com'),
   openGraph: {
-    title: 'SKYNEX DIGITAL | AI-Powered Marketing Automation',
-    description: 'AI-powered marketing automation tools for the new era. Check your brand visibility in AI search, manage partnerships, and automate marketing workflows.',
+    title: 'SKYNEX DIGITAL — AI Search Visibility & Data-Driven Growth',
+    description: 'We help brands get found in AI search engines. Monitor your visibility in ChatGPT, Perplexity, and Gemini — and turn data into growth.',
     url: 'https://skynexdigital.com',
     siteName: 'SKYNEX DIGITAL',
     locale: 'en-US',
     type: 'website',
-    images: [
-      {
-        url: 'https://skynexdigital.com/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'SKYNEX DIGITAL',
-      }
-    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SKYNEX DIGITAL | AI-Powered Marketing Automation',
-    description: 'AI-powered marketing automation tools built for the new era of AI search.',
-    images: ['https://skynexdigital.com/images/twitter-image.jpg'],
+    title: 'SKYNEX DIGITAL — AI Search Visibility & Data-Driven Growth',
+    description: 'We help brands get found in AI search engines.',
   },
   alternates: {
     canonical: 'https://skynexdigital.com',
@@ -55,11 +44,87 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'google-site-verification-code',
-    yandex: 'yandex-verification-code',
-    bing: 'bing-verification-code',
+};
+
+// JSON-LD structured data for GEO/SEO
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'SKYNEX DIGITAL',
+  url: 'https://skynexdigital.com',
+  logo: 'https://skynexdigital.com/images/SKYNEX_500_BLUE.png',
+  description: 'Data-driven growth consultancy specializing in AI search visibility (GEO/SEO), growth automation, and data analytics.',
+  email: 'hello@skynexdigital.com',
+  sameAs: [
+    process.env.NEXT_PUBLIC_LINKEDIN_URL || 'https://linkedin.com/company/skynexdigital',
+  ],
+  knowsAbout: [
+    'Generative Engine Optimization',
+    'AI Search Visibility',
+    'Search Engine Optimization',
+    'Brand Reputation Monitoring',
+    'Growth Automation',
+    'Data Analytics',
+    'Business Development Automation',
+  ],
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'AI Search Visibility & GEO Optimization',
+  provider: {
+    '@type': 'Organization',
+    name: 'SKYNEX DIGITAL',
   },
+  description: 'Monitor and optimize how your brand appears in AI search engines like ChatGPT, Perplexity, and Gemini. Generative Engine Optimization (GEO) combined with traditional SEO.',
+  areaServed: 'Worldwide',
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Growth Services',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'AI Search & Brand Visibility',
+          description: 'Monitor brand presence across ChatGPT, Perplexity, Gemini. Detect unwanted associations. GEO & SEO optimization.',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Growth & Ad Automation',
+          description: 'AI-generated video content, automated ad placement at scale, and conversion tracking.',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Outreach & Business Development',
+          description: 'AI-powered prospect identification, personalized outreach automation, and pipeline management.',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Data & Workflow Optimization',
+          description: 'Automated data pipelines, dashboards, and workflow automation that drive decisions.',
+        },
+      },
+    ],
+  },
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'SKYNEX DIGITAL',
+  url: 'https://skynexdigital.com',
+  description: 'AI Search Visibility & Data-Driven Growth Consultancy',
 };
 
 export default function RootLayout({
@@ -68,24 +133,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en" className={inter.variable}>
       <head>
-        {/* Script to allow theme switching — default dark */}
-        <script dangerouslySetInnerHTML={{ __html: `
-          (function() {
-            try {
-              var savedTheme = localStorage.getItem('theme');
-              if (savedTheme === 'light') {
-                document.documentElement.classList.remove('dark');
-              } else {
-                document.documentElement.classList.add('dark');
-              }
-            } catch (e) { }
-          })();
-        ` }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
       </head>
-      <body className="flex flex-col min-h-screen">
-        <OrganizationSchema />
+      <body className="flex flex-col min-h-screen font-sans">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

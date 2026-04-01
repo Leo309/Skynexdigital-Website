@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Corporate website for SKYNEX DIGITAL — an AI-powered marketing automation company. Products include GeoGrade.ai (AI search visibility), CollabZen.ai (lightweight CRM), and Real Return Analyzer (inflation calculator). Built with Next.js 15 App Router, React 18, TypeScript, and Tailwind CSS. Deployed on Vercel.
+Corporate website for SKYNEX DIGITAL — a data-driven growth consultancy specializing in AI search visibility (GEO/SEO), brand reputation monitoring, and growth automation. Built with Next.js 15 App Router, React 18, TypeScript, and Tailwind CSS. Deployed on Vercel.
+
+The site is intentionally minimal (Stripe/Linear-inspired): one main page with anchor sections, light-only theme, no heavy animations.
 
 ## Commands
 
@@ -21,57 +23,40 @@ No test framework is configured.
 
 ### Routing (App Router)
 
-- `app/(routes)/` — Route group that doesn't affect URL paths. Contains `/about`, `/contact`, `/products`, `/privacy`, `/terms`. `/tools` redirects to `/products`
-- `app/blog/` — Blog section with a parallel route `@modal/` for intercepted modal navigation (subscribe modal)
-- `app/api/contact/route.ts` — POST endpoint for contact form submissions
-- `app/page.tsx` — Homepage with inline hero, services, products, and CTA sections
+- `app/page.tsx` — Single-page homepage with 5 sections: Hero, Core Service, Also, GeoGrade.ai, About + Contact
+- `app/(routes)/privacy/` — Privacy policy
+- `app/(routes)/terms/` — Terms of service
+- No API routes, no blog, no separate product/about/contact pages
 
-### Client vs Server Components
+### Components
 
-Pages are server components by default. Client components (`'use client'`) are used for: `Header.tsx`, `Footer.tsx`, `components/contact/ContactForm.tsx`, `components/ui/ResponsiveImage.tsx`, `components/seo/OrganizationSchema.tsx`, `components/motion/HeroBackground.tsx`.
-
-### Data Flow — Contact Form
-
-`ContactForm.tsx` → `POST /api/contact` → `lib/supabase/client.ts` (Supabase insert) + `lib/email/resend.ts` (Resend email dispatch). Email routing varies by subject type (general/feedback/support/sales).
+Only two components:
+- `components/Header.tsx` — Client component. Sticky header with wordmark + anchor nav links (Services, GeoGrade.ai, Contact). Mobile hamburger menu.
+- `components/Footer.tsx` — Server component. Minimal: copyright + Privacy/Terms links.
 
 ### Styling
 
-- **Tailwind CSS** with `darkMode: 'class'` (manual toggle via localStorage + classList on `<html>`)
-- **Glassmorphism design**: `backdrop-blur`, semi-transparent backgrounds (`bg-white/5`), `border-white/10`
-- **Brand colors** defined in `tailwind.config.js`: `skynex-blue: #0047AB`, `skynex-dark: #121826`, `skynex-light: #F8FAFC`, `skynex-accent: #00D4FF`
-- **Custom utility classes** in `styles/globals.css`: `.btn-primary`, `.btn-secondary`, `.heading-xl/lg/md`, `.container-custom`
-- Dark mode initial theme detection runs in an inline `<script>` in `<head>` within `app/layout.tsx` to prevent FOUC
-
-### Key Libraries
-
-- `framer-motion` — Used in `ResponsiveImage.tsx` for viewport-triggered lazy loading, `HeroBackground.tsx` for scroll-driven text animations; other homepage animations are pure CSS/Tailwind keyframes
-- `clsx` + `tailwind-merge` — For conditional/merged class names
-- `class-variance-authority` — For component variant definitions
-- `zustand` — Installed but not actively used; currently local state only via `useState`
+- **Tailwind CSS** (no dark mode — light-only)
+- **Accent color**: `#2563EB` (blue) defined in `tailwind.config.js`
+- **Custom utility**: `.container-page` (max-w-3xl, centered, px-6) and `.prose-custom` (for legal page typography)
+- No animations, no glassmorphism, no gradients
+- **Font**: Inter only (via `next/font/google`)
 
 ### SEO
 
-Each page exports a `metadata` object. Root layout defines `title.template: '%s | SKYNEX DIGITAL'`. `OrganizationSchema.tsx` provides JSON-LD structured data. `sitemap.ts` and `opengraph-image.tsx` are auto-generated.
+Root layout defines `title.template: '%s | SKYNEX DIGITAL'`. `sitemap.ts` and `opengraph-image.tsx` are auto-generated. No JSON-LD schema (removed for simplicity).
 
 ## Environment Variables
 
-Required in `.env.local` (see `.env.example`):
-- `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` — Supabase connection
-- `RESEND_API_KEY` — Email sending via Resend
-- `NEXT_PUBLIC_REAL_RETURN_ANALYZER_NAME`, `NEXT_PUBLIC_REAL_RETURN_ANALYZER_URL` — Product link config
-- `NEXT_PUBLIC_LINKEDIN_URL`, `NEXT_PUBLIC_TWITTER_URL` — Social links
+In `.env.local`:
+- `NEXT_PUBLIC_LINKEDIN_URL` — LinkedIn profile link (used in homepage contact section)
+- `NEXT_PUBLIC_WEBSITE_URL` — Set in next.config.js as `https://skynexdigital.com`
 
 ## Conventions
 
 - Path alias: `@/*` maps to the project root
 - TypeScript strict mode is OFF (`strict: false` in tsconfig)
-- Components use PascalCase filenames; utilities use camelCase
-- Boolean variables use `is`/`has`/`should` prefixes; event handlers use `handle` prefix
+- Components use PascalCase filenames
 - Git commits follow conventional format: `feat:`, `fix:`, `docs:`, etc.
-- `next.config.js` adds security headers (X-Frame-Options, X-Content-Type-Options, etc.) and strips console logs in production
-
-## Known Quirks
-
-- Several stub components (`ContactCTA.tsx`, `HeroSection.tsx`, `FeaturedProducts.tsx`, `ServiceSection.tsx`) return `null` — they were replaced by inline implementations in page files
-- Two Supabase client files exist: `lib/supabase.ts` (unused legacy) and `lib/supabase/client.ts` (active)
-- `/tools` now redirects to `/products` (both via `next.config.js` 301 redirect and `redirect()` in the page component)
+- `next.config.js` adds security headers and strips console logs in production
+- Use "we" or company name in copy — position as a small professional team, not a one-person shop
