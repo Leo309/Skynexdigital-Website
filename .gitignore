@@ -37,3 +37,6 @@ next-env.d.ts
 
 # Private files (not to be shared publicly)
 CODE_STANDARDS.md
+
+# Claude Code local config
+.claude/
